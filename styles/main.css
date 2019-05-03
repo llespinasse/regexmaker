@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700');
+
+:root {
+  --font: 'Open Sans';
+}
+* {
+  font-family: var(--font);
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin: 20px;
+}
+input, textarea {
+  border: 2px solid #F2F2F2;
+  display: block;
+  padding: 10px;
+  margin: 5px 0px;
+  outline: none;
+  width: calc(100% - 4px);
+}
+textarea {
+  height: 150px;
+}
+label {
+  font-size: 13px;
+  font-weight: bold;
+}
+::placeholder {
+  color: grey;
+}
+.container {
+  left: 50vw;
+  position: absolute;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+  width: 600px;
+}
+button {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 30px;
+  padding: 10px;
+  width: calc(100% + 20px);
+}
+#output {
+  background-color: #F2F2F2;
+  display: none;
+  margin-top: 30px;
+}

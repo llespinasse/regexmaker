@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/queries.css" />
+    <title>Regexmaker</title>
+  </head>
+  <body>
+    <h1>REGEXMAKER</h1>
+    <div class="container">
+      <label>Regular expression</label>
+      <input type="text" placeholder="//g" id="regex" value="(.*)\t(.*)\t(.*)\t(.*)\t(.*)\t(.*)\t(.*)\t(.*)" />
+      <label>String</label>
+      <textarea placeholder="Your test string here" id="string">BRB260134WW/EF	BRB260134WW	Combiné intégrable, 267L	https://www.samsung.com/fr/refrigerators/bottom-mount-freezer-brb260134ww/		array("Froid ventilé intégral","Multi-Flow","Compresseur Digital Inverter")	app	yes
+BRB260176WW/EF	BRB260176WW	Combiné intégrable, 264L	https://www.samsung.com/fr/refrigerators/bottom-mount-freezer-brb260176ww/		array("Froid Ventilé Plus","Zone convertible: plus de flexibilité de stockage","Revêtement Metal Cooling","Multi-Flow")	app	yes</textarea>
+      <label>PHP</label>
+      <input type="text" placeholder="<?php instructions" id="phpMask" value="'$1'    =>  array('model'=>'$2', 'color'=>'', 'colorcode'=>'', 'lab'=>'$3','lnkplus'=>'$4','promo'=>'', 'img'=>$2, 'features' =>$6,nrj'=>'$7','market'=>'','shopsale'	=>	'$8')" />
+      <textarea id="output"></textarea>
+      <button>DO IT !</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
