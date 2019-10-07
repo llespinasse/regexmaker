@@ -27,3 +27,9 @@ $('button').click(function() {
   $('#output').val(outputs);
   $('#output').show();
 });
+
+document.getElementById("regex").onclick = function() {
+    this.select();
+    document.execCommand('copy');
+    alert('Regex copied to clipboard!');
+}
